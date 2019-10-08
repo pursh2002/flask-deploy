@@ -1,1 +1,1 @@
-web: gunicorn app:app --log-file - --bind 0.0.0.0:80
+gunicorn -b localhost:8880 -w 4 app:app
